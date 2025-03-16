@@ -1,0 +1,28 @@
+/* write your css here */
+/* Add to your global styles */
+body.overflow-hidden {
+    overflow: hidden !important;
+  }
+  
+  /* Optional: Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+  /* Add to your global CSS */
+.aspect-16-9 {
+  aspect-ratio: 16/9;
+}
+
+@supports not (aspect-ratio: 16/9) {
+  .aspect-16-9::before {
+    float: left;
+    padding-top: 56.25%;
+    content: '';
+  }
+  
+  .aspect-16-9::after {
+    display: block;
+    content: '';
+    clear: both;
+  }
+}

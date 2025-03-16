@@ -41,14 +41,14 @@ const Sidebar = () => {
               <FaHome className="mr-3" /> Home
             </NavLink>
           </li>
-          {/* <li>
+          <li>
             <NavLink to="/enquiry/new" className={({isActive}) => 
               `sidebar-link ${isActive ? 'active' : ''}`
             }>
               <span className="function-key">F3</span>
               <FaQuestionCircle className="mr-3" /> Enquiry
             </NavLink>
-          </li> */}
+          </li>
           <li>
             <NavLink to="/admissions" className={({isActive}) => 
               `sidebar-link ${isActive ? 'active' : ''}`
@@ -73,14 +73,14 @@ const Sidebar = () => {
               <FaReceipt className="mr-3" /> Expenses
             </NavLink>
           </li>
-          {/* <li>
+          <li>
             <NavLink to="/marketing" className={({isActive}) => 
               `sidebar-link ${isActive ? 'active' : ''}`
             }>
               <span className="function-key">F7</span>
               <FaBullhorn className="mr-3" /> Marketing
             </NavLink>
-          </li> */}
+          </li>
           <li>
             <NavLink to="/certificates" className={({isActive}) => 
               `sidebar-link ${isActive ? 'active' : ''}`

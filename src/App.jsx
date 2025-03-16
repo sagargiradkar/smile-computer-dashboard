@@ -16,6 +16,8 @@ import Marketing from './components/marketing/Marketing';
 import Reminders from './components/reminders/Reminders';
 import { AppProvider } from './contexts/AppContext';
 import './index.css';
+import TransactionHistory from './components/transactions/TransactionHistory';
+import ExpensesComponent from './components/expenses/ExpensesComponent';
 
 function App() {
   return (
@@ -29,7 +31,11 @@ function App() {
             <Route path="/enquiry/list" element={<EnquiryList />} />
           
             <Route path="/transactions" element={<Transactions />} />
+            <Route path="/transactions/fees-receipt" element={<FeesReceipt />} />
+            <Route path="/transactions/history" element={<TransactionHistory />} />
             <Route path="/transactions/fees" element={<FeesReceipt />} />
+            <Route path="/expenses" element={< ExpensesComponent />} />
+           
             <Route path="/expenses/add" element={<AddExpense />} />
             <Route path="/expenses/list" element={<ExpensesList />} />
             <Route path="/marketing" element={<Marketing />} />
